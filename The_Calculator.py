@@ -131,4 +131,6 @@ Or write "stop" to end the programme.
         case _:
             print("Wrong entry! Try again")
             continue
+
 print("The programme is completed. Thank you for choosing The Calculator!")
+print("And thank you very much for using GitРги to co-develop this application.")
