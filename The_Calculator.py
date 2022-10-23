@@ -54,11 +54,10 @@ def sinus():
     return round(math.sin(angle_rad), 4)
 
 
-# TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
-# def cosine():
-#     angle_rad = (data_for_one())*math.pi/180
-#     return round(math.cos(angle_rad), 4)
-#
+def cosine():
+     angle_rad = (data_for_one())*math.pi/180
+     return round(math.cos(angle_rad), 4)
+
 
 # TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
 # def power():
@@ -81,7 +80,7 @@ while True:
     choice_1 = input('''
     Choose an action: 
     
-    +    -    /    *   sin
+    +    -    /    *   sin  cos
     $$ - for deposit calculation 
     
 Or write "stop" to end the programme.
@@ -108,11 +107,10 @@ Or write "stop" to end the programme.
         case 'sin':
             print(sinus())
             continue
-        #     TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
-        # case 'cos':
-        #     print(cosine())
-        #     continue
-        #     TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
+        case 'cos':
+             print(cosine())
+             continue
+        # TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
         # case 'sqr_root':
         #     print(sqr_root())
         #     TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
