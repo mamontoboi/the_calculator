@@ -48,11 +48,10 @@ def mult():
     return a * b
 
 
-# TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
-# def sinus():
-#     angle_rad = (data_for_one())*math.pi/180
-#     return round(math.sin(angle_rad), 4)
-#
+def sinus():
+     angle_rad = (data_for_one())*math.pi/180
+     return round(math.sin(angle_rad), 4)
+
 
 # TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
 # def cosine():
@@ -81,7 +80,7 @@ while True:
     choice_1 = input('''
     Choose an action: 
     
-    +    -    /    *  
+    +    -    /    *   sin
     $$ - for deposit calculation 
     
 Or write "stop" to end the programme.
@@ -105,10 +104,9 @@ Or write "stop" to end the programme.
         case '*':
             print(mult())
             continue
-        #     TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
-        # case 'sin':
-        #     print(sinus())
-        #     continue
+        case 'sin':
+            print(sinus())
+            continue
         #     TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
         # case 'cos':
         #     print(cosine())
