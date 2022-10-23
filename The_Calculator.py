@@ -3,6 +3,7 @@
 
 import math
 
+
 def data_for_one():
     return int(input("Enter a = "))
 
@@ -49,8 +50,8 @@ def mult():
 
 
 def sinus():
-     angle_rad = (data_for_one())*math.pi/180
-     return round(math.sin(angle_rad), 4)
+    angle_rad = (data_for_one()) * math.pi / 180
+    return round(math.sin(angle_rad), 4)
 
 
 # TODO: To be uncommitted to make change to programme. choice_1 to be updated as appropriate
@@ -69,8 +70,8 @@ def bank(val, month, percent=10):
     The function calculates the final amount on the bank account after completion of the term of the deposit.
     """
     if month == 1:
-        return val * (((percent/12) + 100) / 100)
-    return bank(val * (((percent/12) + 100) / 100), month - 1, percent)
+        return val * (((percent / 12) + 100) / 100)
+    return bank(val * (((percent / 12) + 100) / 100), month - 1, percent)
 
 
 print("Welcome to the good old calculator programme.\nYou might think that you have seen it before.\n"
@@ -123,7 +124,7 @@ Or write "stop" to end the programme.
         case '$$':
             amnt = int(input("What is the sum of deposit? \n"))
             term = float(input("How long will be the term of the deposit, in months? \n"))
-            rate = float(input("What's gonna be the yearly interest rate, in %? \n"))
+            rate = int(input("What's gonna be the yearly interest rate, in %? \n"))
 
             print(f'The total amount accumulated during the whole term of '
                   f'deposit will be USD {round(bank(amnt, term, rate), 2)}')
